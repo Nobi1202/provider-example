@@ -21,6 +21,7 @@ class SecondScreen extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
+        heroTag: "1",
         key: Key('addItem_floatingActionButton'),
         onPressed: () => context.read<ShoppingCart>().addItem('Bread'),
         tooltip: 'Add Item',

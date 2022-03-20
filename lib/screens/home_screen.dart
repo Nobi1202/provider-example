@@ -32,6 +32,7 @@ class MyHomePage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
           FloatingActionButton(
+            heroTag: "1",
             key: Key('decrement_floatingActionButton'),
             onPressed: () => context.read<Counter>().decrement(),
             tooltip: 'Decrement',
@@ -41,6 +42,7 @@ class MyHomePage extends StatelessWidget {
             width: 10.0,
           ),
           FloatingActionButton(
+            heroTag: "2",
             key: Key('reset_floatingActionButton'),
             onPressed: () => context.read<Counter>().reset(),
             tooltip: 'Reset',
@@ -50,6 +52,7 @@ class MyHomePage extends StatelessWidget {
             width: 10.0,
           ),
           FloatingActionButton(
+            heroTag: "3",
             key: Key('increment_floatingActionButton'),
             onPressed: () => context.read<Counter>().increment(),
             tooltip: 'Increment',
